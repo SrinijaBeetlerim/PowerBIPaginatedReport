@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Leadprime Automation&apos;&#x0D;&#x0A;- Original project: &apos;Leadprime Automation&apos;&#x0D;&#x0A;- Original element: &apos;Leadprime Automation/src/LeadPrime_Automation&apos;" description="Delete element" element1="/src&lt;LeadPrime_Automation" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1651138303381" subPackages="false" version="1.0"/>
+</session>
