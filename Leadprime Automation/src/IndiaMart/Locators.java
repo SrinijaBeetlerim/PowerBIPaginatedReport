@@ -48,7 +48,7 @@ public class Locators
 	public static By loginPopUpCloseButton = By.xpath("//*[@id='popupContact_s']/div/a");
 	public static By timeWhenTimeAndDateNotAvailableInMessage = By.xpath("//*[@class='lst-msg-date unread']");
 	public static By beAwareOfUserElement = By.id("fraud_div");
-	
+	public static By beAwareOfUserElement2 = By.cssSelector("#fraud_div > svg");
 
 	//Lead Prime
 	public static By leadprimecompanyID = By.id("txt_companycode");

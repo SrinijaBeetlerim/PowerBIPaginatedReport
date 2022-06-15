@@ -152,8 +152,7 @@ public class IndiaMart
 			{
 				if(RunnerClass_1.driver.findElement(Locators.beAwareOfUserElement).isDisplayed())
 				{
-					
-					continue;
+					RunnerClass_1.clickAnElement(RunnerClass_1.driver.findElement(Locators.beAwareOfUserElement2));
 				}
 
 			}

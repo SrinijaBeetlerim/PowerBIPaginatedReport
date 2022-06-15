@@ -497,14 +497,11 @@ public class IndiaMart
 		//cell.setCellType(cell.CELL_TYPE_NUMERIC);
 		cell.setCellValue(i+RunnerClass_1.lastRowNumber+1);
 		//RunnerClass.waitForElementLocated(Locators.productInfo);
-		//Getting Product Info
-		Cell user = row.createCell(4);
-		user.setCellValue(RunnerClass_1.userAccountName);
 		String productInfo;
 		try
 		{
 		 productInfo = RunnerClass_1.driver.findElement(Locators.productInfo).getText();
-		 System.out.println("productInfo");
+		 System.out.println(productInfo);
 		}
 		catch(Exception e)
 		{
@@ -556,7 +553,15 @@ public class IndiaMart
 				//sellerName2.setCellType(sellerName2.CELL_TYPE_STRING);
 				System.out.println(sellerName.replaceAll("|", "").trim());
 				sellerName2.setCellValue(sellerName.replaceAll("|", "").trim());
+							
 			}
+		//Srinija
+				Cell user = row.createCell(4);
+				user.setCellValue(RunnerClass_1.userAccountName);
+				System.out.println("India mart user logged in is:");
+				System.out.println(user);
+	
+			
 			//seller location
 			try
 			{
@@ -585,12 +590,6 @@ public class IndiaMart
 	                System.out.println("No Location");	
 	                RunnerClass_1.js.executeScript("arguments[0].scrollIntoView();",element);
 			}
-			//included by srinija
-			
-			
-			   
-			// Seller Mobile Number
-			//RunnerClass.waitForElementLocated(Locators.sellerMobileNumber);
 			String sellerMobileNumber ="";
 			try
 			{
@@ -633,8 +632,8 @@ public class IndiaMart
 			//script included by srinija
 			
 			
-		//	Cell user = row.createCell(4);
-		//	user.setCellValue(RunnerClass_1.userAccountName);
+			//Cell user = row.createCell(4);
+			//user.setCellValue(RunnerClass_1.userAccountName);
 			
 			 //Srinija end of inclusion
 		
